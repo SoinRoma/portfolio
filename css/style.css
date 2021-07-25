@@ -95,6 +95,8 @@ body {
   line-height: 14px;
   text-transform: uppercase;
   font-weight: bold;
+  text-decoration: none;
+  color:#000;
 }
 
 .hero-avatar {
@@ -102,7 +104,7 @@ body {
   height: 389px;
   background-color: #fff;
   border-radius: 50%;
-  background-image: url(../img/avatar.jpg);
+  background-image: url(../img/avatar.png);
   background-repeat: no-repeat;
   background-position: center top -10px;
   border: 13px solid #fff;
@@ -288,9 +290,9 @@ body {
 }
 
 .contacts-block {
-  display: flex;
+  /* display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between; */
 }
 
 .contacts-text {
@@ -299,14 +301,14 @@ body {
 
 .contacts-data {
   display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 42px;
+  /* flex-wrap: wrap; */
+  /* margin-bottom: 42px; */
 }
 
 .contacts-phone,
 .contacts-mail {
-  flex-basis: 50%;
-  margin-bottom: 53px;
+  flex-basis: 53%;
+  /* margin-bottom: 53px; */
 }
 
 .contacts-social {
@@ -392,7 +394,35 @@ body {
   .contacts-form {
     margin-bottom: 58px;
   }
+
+  .contacts-phone, .contacts-mail{
+    font-size: 12px;
+  }
+
+  .section-title{
+    font-size: 25px;
+    margin-bottom: 42px;
+  }
+
+  .contacts-title{
+    font-size: 18px;
+  }
+
 }
+
+@media (max-width: 627px){
+  .features{
+    text-align: center;
+  }
+  .contacts-data{
+    display: block;
+  }
+  .contacts-link{
+    margin-right: 0;
+  }
+}
+
+
 
 @media (max-width: 564px) {
   .hero {
