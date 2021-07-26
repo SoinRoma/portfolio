@@ -23,17 +23,34 @@ body {
 }
 .section-title {
   margin: 0;
-  margin-bottom: 84px;
+  margin-bottom: 70px;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
   line-height: 42px;
 }
 
+.myproject-title{
+  margin: 0;
+  margin-bottom: 10px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.myproject-subtitle{
+  margin: 0;
+  margin-bottom: 40px;
+  font-style: normal;
+  font-weight: bold;
+  color:#949292;
+}
+
 .hero {
   padding-top: 30px;
   background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
-  padding-bottom: 155px;
+  padding-bottom: 100px;
 }
 
 .hero-header {
@@ -87,6 +104,7 @@ body {
 
 .button {
   background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
+  /* box-shadow: 0px 4px 0px #493707; */
   border-radius: 5px 5px 10px 10px;
   padding: 24px 42px;
   border: none;
@@ -99,7 +117,7 @@ body {
   
 }
 
- /* Пульсация для главной кнопки */
+/* Пульсация для главной кнопки */
 .bigButton{
   animation: pulsating 5s linear infinite;
 }
@@ -322,7 +340,7 @@ body {
 
 .contacts-phone,
 .contacts-mail {
-  flex-basis: 53%;
+  flex-basis: 40%;
   /* margin-bottom: 53px; */
 }
 
@@ -436,6 +454,16 @@ body {
     margin-bottom: 42px;
   }
 
+  .myproject-title{
+    font-size: 25px;
+    margin-bottom: 7px;
+  }
+  
+  .myproject-subtitle{
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
   .contacts-title{
     font-size: 18px;
   }
@@ -538,6 +566,19 @@ body {
     text-align: center;
   }
 
+  .myproject-title{
+    font-size: 19px;
+    line-height: 22px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  
+  .myproject-subtitle{
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 9px;
+  }
+
   .features-item {
     flex-basis: 100%;
     margin-bottom: 30px;
@@ -592,7 +633,7 @@ body {
   .contacts-phone,
   .contacts-mail {
     flex-basis: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
   }
 
   .contacts-title {
