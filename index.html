@@ -9,7 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css" />
   <link rel="stylesheet" href="css/swiper-bundle.min.css" />
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="icon" href="svg/favicon.svg" </head>
+  <link rel="icon" href="svg/favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+</head>
 
 <body>
   <header class="hero">
@@ -58,7 +60,9 @@
             <!-- Slides -->
 
             <div class="swiper-slide projects-slide">
-              <img src="img/layouts/Arenda.png" alt="MobileSoft" class="project-image" />
+              <a data-fancybox href="img/layouts/full/ArendaFull.jpg">
+                <img src="img/layouts/Arenda.png" alt="Arenda" class="project-image pulse" />
+              </a>
               <div class="project-text">
                 <h3 class="project-title">Сайт для Аренды офисов</h3>
                 <div class="project-time">
@@ -80,7 +84,9 @@
             </div>
 
             <div class="swiper-slide projects-slide">
-              <img src="img/layouts/Mobile.png" alt="MobileSoft" class="project-image" />
+              <a data-fancybox href="img/layouts/full/MobileFull.jpg">
+                <img src="img/layouts/Mobile.png" alt="MobileSoft" class="project-image pulse" />
+              </a>
               <div class="project-text">
                 <h3 class="project-title">Сайт для Мобильного приложения</h3>
                 <div class="project-time">
@@ -102,7 +108,9 @@
             </div>
 
             <div class="swiper-slide projects-slide">
-              <img src="img/layouts/GamesConsole.png" alt="MobileSoft" class="project-image" />
+              <a data-fancybox href="img/layouts/full/GamesConsoleFull.png">
+                <img src="img/layouts/GamesConsole.png" alt="GamesConsole" class="project-image pulse" />
+              </a>
               <div class="project-text">
                 <h3 class="project-title">Сайт для Игровых консолей</h3>
                 <div class="project-time">
@@ -124,7 +132,9 @@
             </div>
 
             <div class="swiper-slide projects-slide">
-              <img src="img/layouts/Zoo.png" alt="Zoo" class="project-image" />
+              <a data-fancybox href="img/layouts/full/ZooFull.jpg">
+                <img src="img/layouts/Zoo.png" alt="Zoo" class="project-image pulse" />
+              </a>
               <div class="project-text">
                 <h3 class="project-title">Сайт для Зоо-Магазина</h3>
                 <div class="project-time">
@@ -456,7 +466,9 @@
 
   <script src="js/wow.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
   <script src="js/main.js"></script>
+
 </body>
 
 </html>
