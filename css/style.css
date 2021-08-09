@@ -80,6 +80,7 @@ body {
   color: white;
   text-decoration: none;
   font-size: 11px;
+  padding-bottom: 5px;
 }
 
 .social-link:first-child {
@@ -509,7 +510,7 @@ body {
 
 }
 
-@media (max-width: 627px){
+@media (max-width: 723px){
   .features{
     text-align: center;
   }
