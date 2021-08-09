@@ -75,12 +75,16 @@ body {
   margin-bottom: 105px;
 }
 
+.logo{
+  width: 90%;
+}
+
 .social-link {
   margin-left: 20px;
   color: white;
   text-decoration: none;
   font-size: 11px;
-  padding-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 .social-link:first-child {
