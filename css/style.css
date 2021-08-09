@@ -79,12 +79,15 @@ body {
   width: 90%;
 }
 
+.header-links{
+  margin-bottom: 8px;
+}
+
 .social-link {
   margin-left: 20px;
   color: white;
   text-decoration: none;
   font-size: 11px;
-  margin-bottom: 8px;
 }
 
 .social-link:first-child {
