@@ -14,44 +14,46 @@
 </head>
 
 <body>
-  <header class="hero">
-    <div class="container">
-      <div class="hero-header">
-        <img src="svg/logo.svg" alt="SR" class="logo" />
-        <div class="social-links">
-          <a target="_blank" href="https://github.com/SoinRoma" class="social-link"><img src="svg/social/github.svg"
-              alt="Github" /></a>
-          <a target="_blank" href="https://www.instagram.com/soin_roman/" class="social-link"><img
-              src="svg/social/instagram.svg" alt="Instagram" /></a>
-          <a target="_blank" href="https://www.facebook.com/soinroman/" class="social-link"><img
-              src="svg/social/facebook.svg" alt="Facebook" /></a>
-        </div>
-      </div>
-      <div class="hero-content">
-        <div class="hero-text wow zoomIn" data-wow-delay="0.5s">
-          <h1 class="hero-title ">
-            Соин Роман
-          </h1>
-          <span class="hero-subtitle">Вэб разработчик, Фрилансер</span>
-          <p class="hero-description">
-            Разрабатываю сайты для малого и среднего бизнеса. Вы можете
-            заказать дизайн и верстку небольшого сайта или интернет-магазина.
-          </p>
-          <a href="https://t.me/Soin_Roman" class="button hero-button bigButton" target="_blank">
-            Бесплатная консультация в Телеграме
-          </a>
-        </div>
-        <div class="hero-avatar wow zoomIn" data-wow-delay="1s"></div>
-      </div>
+
+  <header class="hero-header  header">
+    <a href="#main"><img src="svg/logo.svg" alt="SR" class="logo" /></a>
+    <div class="social-links">
+      <a href="#layouts" class="social-link">МАКЕТЫ</a>
+      <a href="#projects" class="social-link">ПРОЕКТЫ</a>
+      <a href="#contacts" class="social-link">КОНТАКТЫ</a>
     </div>
   </header>
 
+
+
   <main>
 
+    <div class="hero" id="main">
+      <div class="container">
 
-    <!-- /.feautures -->
+        <div class="hero-content">
+          <div class="hero-text wow zoomIn" data-wow-delay="0.5s">
+            <h1 class="hero-title ">
+              Соин Роман
+            </h1>
+            <span class="hero-subtitle">Вэб разработчик, Фрилансер</span>
+            <p class="hero-description">
+              Разрабатываю сайты для малого и среднего бизнеса. Вы можете
+              заказать дизайн и верстку небольшого сайта или интернет-магазина.
+            </p>
+            <a href="https://t.me/Soin_Roman" class="button hero-button bigButton" target="_blank">
+              Бесплатная консультация в Телеграме
+            </a>
+          </div>
+          <div class="hero-avatar wow zoomIn" data-wow-delay="1s"></div>
+        </div>
+      </div>
+    </div>
 
-    <section class="section web-layout ">
+
+
+
+    <section class="section web-layout  " id="layouts">
       <div class="container wow zoomIn" data-wow-delay="0.8s">
         <h2 class="section-title ">Последние Web макеты</h2>
         <div class="swiper-container projects-slider">
@@ -161,7 +163,7 @@
       </div>
     </section>
 
-    <section class="features section projects">
+    <section class="projects section features ">
       <div class="container wow zoomIn" data-wow-delay="0.4s">
         <h2 class="section-title">
           Со мной удобно работать
@@ -216,7 +218,8 @@
       <!-- /.container -->
     </section>
 
-    <section class="section hero ">
+
+    <section class="section myprojects " id="projects">
       <div class="container wow zoomIn" data-wow-delay="0.8s">
         <h2 class="myproject-title">Мои проекты</h2>
         <h4 class="myproject-subtitle">На основе известных брендов</h4>
@@ -427,42 +430,44 @@
       </div>
     </section>
 
-  </main>
-
-  <footer class="section features footer">
-    <div class="container wow zoomIn" data-wow-delay="0.4s">
-      <h2 class="section-title footer-title">Свяжитесь со мной</h2>
-      <div class="contacts-block">
-        <div class="contacts-text">
-          <div class="contacts-data">
-            <div class="contacts-social">
-              <h4 class="contacts-title">Соцсети</h4>
-              <div class="social-links footer-link">
-                <a target="_blank" href="https://github.com/SoinRoma" class="social-link"><img
-                    src="svg/social/github.svg" alt="Github" /></a>
-                <a target="_blank" href="https://t.me/Soin_Roman" class="social-link"><img src="svg/social/telegram.svg"
-                    alt="Telegram" /></a>
-                <a target="_blank" href="https://vk.com/soin_roman" class="social-link"><img src="svg/social/vk.svg"
-                    alt="Telegram" /></a>
-                <a target="_blank" href="https://www.instagram.com/soin_roman/" class="social-link"><img
-                    src="svg/social/instagram.svg" alt="Instagram" /></a>
-                <a target="_blank" href="https://www.facebook.com/soinroman/" class="social-link"><img
-                    src="svg/social/facebook.svg" alt="Facebook" /></a>
+    <footer class="section features footer" id="contacts">
+      <div class="container wow zoomIn" data-wow-delay="0.4s">
+        <h2 class="section-title footer-title">Свяжитесь со мной</h2>
+        <div class="contacts-block">
+          <div class="contacts-text">
+            <div class="contacts-data">
+              <div class="contacts-social">
+                <h4 class="contacts-title">Соцсети</h4>
+                <div class="social-links footer-link">
+                  <a target="_blank" href="https://github.com/SoinRoma" class="social-link"><img
+                      src="svg/social/github.svg" alt="Github" /></a>
+                  <a target="_blank" href="https://t.me/Soin_Roman" class="social-link"><img
+                      src="svg/social/telegram.svg" alt="Telegram" /></a>
+                  <a target="_blank" href="https://vk.com/soin_roman" class="social-link"><img src="svg/social/vk.svg"
+                      alt="Telegram" /></a>
+                  <a target="_blank" href="https://www.instagram.com/soin_roman/" class="social-link"><img
+                      src="svg/social/instagram.svg" alt="Instagram" /></a>
+                  <a target="_blank" href="https://www.facebook.com/soinroman/" class="social-link"><img
+                      src="svg/social/facebook.svg" alt="Facebook" /></a>
+                </div>
               </div>
-            </div>
-            <div class="contacts-phone">
-              <h4 class="contacts-title">Телефон</h4>
-              <a href="tel:+998909431832" class="contacts-link">+998 90 943-18-32</a>
-            </div>
-            <div class="contacts-mail">
-              <h4 class="contacts-title">Почта</h4>
-              <a href="mailto:soinroma26@gmail.com" class="contacts-link">soinroma26@gmail.com</a>
+              <div class="contacts-phone">
+                <h4 class="contacts-title">Телефон</h4>
+                <a href="tel:+998909431832" class="contacts-link">+998 90 943-18-32</a>
+              </div>
+              <div class="contacts-mail">
+                <h4 class="contacts-title">Почта</h4>
+                <a href="mailto:soinroma26@gmail.com" class="contacts-link">soinroma26@gmail.com</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+
+  </main>
+
+
 
   <script src="js/wow.min.js"></script>
   <script src="js/swiper-bundle.min.js"></script>

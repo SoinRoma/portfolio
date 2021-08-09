@@ -19,7 +19,7 @@ body {
 
 .section {
   padding-top: 64px;
-  padding-bottom: 92px;
+  padding-bottom: 40px;
 }
 .section-title {
   margin: 0;
@@ -47,21 +47,39 @@ body {
   color:#949292;
 }
 
+.header{
+    z-index: 999;
+    padding: 20px 0;
+    background: linear-gradient(180deg, #000000 0%, rgb(28 28 40) 95.44%);
+    box-shadow: 0 3px 20px rgb(0 0 0 / 20%);
+    position: fixed;
+    width: 100%;
+}
+
 .hero {
-  padding-top: 30px;
+  padding-top: 140px;
+  background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
+  padding-bottom: 100px;
+}
+
+.myprojects{
+  padding-top: 50px;
   background: linear-gradient(0.01deg, #000000 0.01%, rgba(0, 0, 0, 0) 95.44%);
   padding-bottom: 100px;
 }
 
 .hero-header {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-bottom: 105px;
 }
 
 .social-link {
   margin-left: 20px;
+  color: white;
+  text-decoration: none;
+  font-size: 11px;
 }
 
 .social-link:first-child {
