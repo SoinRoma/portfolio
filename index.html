@@ -1,494 +1,932 @@
 <!DOCTYPE html>
-<html lang="ru">
-
+<html class="no-js" lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <meta charset="utf-8">
     <title>Soin Roman</title>
-    
-    <meta name="twitter:image:src" content="https://soinroma.github.io/Portfolio/img/banner.png">
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <meta name="twitter:image:src" content="https://soinroma.github.io/Portfolio/images/banner.png">
+    <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:site" content="Soin Roman">
     <meta name="twitter:title" content="Portfolio">
-    <meta name="twitter:description" content="Разрабатываю сайты для малого и среднего бизнеса. Вы можете заказать дизайн и верстку небольшого сайта или интернет-магазина.">
+    <meta name="twitter:description" content="Разрабатываю сайты для малого и среднего бизнеса.">
 
     <meta property="og:type" content="website"/>
     <meta property="og:url" content="https://soinroma.github.io/Portfolio/"/>
     <meta property="og:title" content="Portfolio"/>
     <meta property="og:site_name" content="Soin Roman"/>
-    <meta property="og:description" content="Разрабатываю сайты для малого и среднего бизнеса. Вы можете заказать дизайн и верстку небольшого сайта или интернет-магазина."/>
-    <meta property="og:image" content="https://soinroma.github.io/Portfolio/img/banner.png"/>
+    <meta property="og:description" content="Разрабатываю сайты для малого и среднего бизнеса."/>
+    <meta property="og:image" content="https://soinroma.github.io/Portfolio/images/banner.png"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="600"/>
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.compat.css"/>
-    <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="icon" href="svg/favicon.svg">
-    <link rel="stylesheet" href="css/fancybox.css"/>
+    <link rel="shortcut icon" href="images/svg/favicon.svg" type="image/x-icon">
+    <link rel="icon" href="images/svg/favicon.svg" type="image/x-icon">
+
+    <!-- CSS
+   ================================================== -->
+    <link rel="stylesheet" href="css/bootstrap/base.css">
+    <link rel="stylesheet" href="css/bootstrap/vendor.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- script
+   ================================================== -->
+    <script src="js/base/modernizr.js"></script>
+
 </head>
 
-<body>
 
-<header class="hero-header  header">
-    <a href="#main"><img src="svg/logo.svg" alt="SR" class="logo"/></a>
-    <div class="social-links header-links">
-        <a href="#layouts" class="social-link">МАКЕТЫ</a>
-        <a href="#projects" class="social-link">ПРОЕКТЫ</a>
-        <a href="#contacts" class="social-link">КОНТАКТЫ</a>
-    </div>
-</header>
+<body id="top">
 
-
-<main>
-
-    <div class="hero" id="main">
-        <div class="container">
-
-            <div class="hero-content">
-                <div class="hero-text wow zoomIn" data-wow-delay="0.5s">
-                    <h1 class="hero-title ">
-                        Соин Роман
-                    </h1>
-                    <span class="hero-subtitle">Вэб разработчик, Фрилансер</span>
-                    <p class="hero-description">
-                        Разрабатываю сайты для малого и среднего бизнеса. Вы можете
-                        заказать дизайн и верстку небольшого сайта или интернет-магазина.
-                    </p>
-                    <a href="https://t.me/Soin_Roman" class="button hero-button bigButton" target="_blank">
-                        Бесплатная консультация в Телеграме
-                    </a>
-                </div>
-                <div class="hero-avatar wow zoomIn" data-wow-delay="1s"></div>
-            </div>
-        </div>
+<!-- header
+================================================== -->
+<header>
+    <div class="header-logo">
+        <a href="index.html">
+            <img class="mylogo" src="images/svg/logo.svg" alt="">
+        </a>
     </div>
 
+    <a id="header-menu-trigger" href="#0">
+        <span class="header-menu-text"></span>
+        <span class="header-menu-icon"></span>
+    </a>
 
-    <section class="section web-layout  " id="layouts">
-        <div class="container wow zoomIn" data-wow-delay="0.8s">
-            <h2 class="section-title ">Последние Web макеты</h2>
-            <div class="swiper-container projects-slider">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
+    <nav id="menu-nav-wrap">
+        <a href="#0" class="close-button" title="Закрыть"><span>Закрыть</span></a>
+        <img class="logo-burger" src="images/svg/logo.svg" alt="">
+        <ul class="nav-list">
+            <li class="current"><a class="smoothscroll" href="#home" title="">Главная</a></li>
+            <li><a class="smoothscroll" href="#about" title="">Обо мне</a></li>
+            <li><a class="smoothscroll" href="#skills" title="">Навыки</a></li>
+            <li><a class="smoothscroll" href="#credentials" title="">Мой опыт</a></li>
+            <li><a class="smoothscroll" href="#portfolio" title="">Макеты</a></li>
+            <li><a class="smoothscroll" href="#portfolio1" title="">Портфолио</a></li>
+            <li><a class="smoothscroll" href="#contact" title="">Контакты</a></li>
+        </ul>
+        <ul class="header-social-list">
+            <li>
+                <a target="_blank" href="https://www.facebook.com/soinroman/"><i class="fa fa-facebook-square"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.linkedin.com/in/soinroman/"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://vk.com/soin_roman"><i class="fa fa-vk"></i></a>
+            </li>
+            <li>
+                <a target="_blank" href="https://t.me/Soin_Roman">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                         class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                    </svg>
+                </a>
+            </li>
+            <li>
+                <a target="_blank" href="https://www.instagram.com/soin_roman/"><i class="fa fa-instagram"></i></a>
+            </li>
+        </ul>
+    </nav> <!-- end #menu-nav-wrap -->
 
-                    <div class="swiper-slide projects-slide">
-                        <a data-fancybox href="img/layouts/full/ArendaFull.jpg">
-                            <img src="img/layouts/Arenda.png" alt="Arenda" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">Сайт для Аренды офисов</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">4 рабочих дня</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">600 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
-                    </div>
+</header> <!-- end header -->
 
-                    <div class="swiper-slide projects-slide">
-                        <a data-fancybox href="img/layouts/full/MobileFull.jpg">
-                            <img src="img/layouts/Mobile.png" alt="MobileSoft" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">Сайт для Мобильного приложения</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">3 рабочих дня</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">300 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
-                    </div>
+<!-- home
+================================================== -->
+<section id="home">
 
-                    <div class="swiper-slide projects-slide">
-                        <a data-fancybox href="img/layouts/full/GamesConsoleFull.png">
-                            <img src="img/layouts/GamesConsole.png" alt="GamesConsole" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">Сайт для Игровых консолей</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">3 рабочих дня</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">400 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
-                    </div>
+    <div class="overlay"></div>
+    <div class="gradient-overlay"></div>
 
-                    <div class="swiper-slide projects-slide">
-                        <a data-fancybox href="img/layouts/full/ZooFull.jpg">
-                            <img src="img/layouts/Zoo.png" alt="Zoo" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">Сайт для Зоо-Магазина</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">3 рабочих дня</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">300 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
-                    </div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="projects-pagination"></div>
+    <div class="home-content-table">
+
+        <div class="home-content-tablecell">
+            <div class="row">
+                <div class="col-twelve">
+                    <div class="home-bottom-text">
+
+                        <h3 class="animate-intro">Привет</h3>
+                        <h1 class="animate-intro">
+                            Я Соин Роман.<br>
+                            Веб программист<br>
+                            UI/UX Дизайнер.<br>
+                        </h1>
+
+                        <ul class="home-section-links">
+                            <li class="animate-intro">Больше <a href="#about" class="smoothscroll">обо мне</a></li>
+                            <li class="animate-intro">Посмотреть<a href="#portfolio" class="smoothscroll">мои макеты</a>
+                            </li>
+                            <li class="animate-intro">Узнать<a href="#contact" class="smoothscroll">контакты</a></li>
+                        </ul>
+
+                    </div> <!-- end home-bottom-text -->
+                </div> <!-- end col-twelve -->
+            </div> <!-- end row -->
+        </div> <!-- end home-content-tablecell -->
+    </div> <!-- end home-content-table -->
+
+</section> <!-- end home -->
+
+<!-- about
+================================================== -->
+<section id="about">
+
+    <div class="about-profile-bg"></div>
+
+    <div class="about-wrap">
+
+        <div class="about-profile">
+
+            <div class="about-profile-bg"></div>
+
+            <div class="intro">
+                <h1 class="animate-this">Обо мне.</h1>
+
+                <p class="lead animate-this">
+                    Я веб-разработчик в компании Altek LLC. Занимаюсь разработкой и сопровождением сайтов. Делаю также
+                    дизайн сайтов и сайты под ключ. В качестве технологий использую HTML, CSS. JavaScript, JQuery,
+                    Angular, React, Django.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <section class="projects section features ">
-        <div class="container wow zoomIn" data-wow-delay="0.4s">
-            <h2 class="section-title">
-                Со мной удобно работать
-            </h2>
-            <div class="features-block">
-                <div class="features-item">
-                    <img src="svg/icon/offer-img.svg" alt="По договору" class="features-image"/>
-                    <h3 class="features-title">По соглашению</h3>
-                    <p class="feature-text">
-                        Соглашение оформляется между мной, как физическим лицом и заказчиком.
-                    </p>
-                </div>
-                <div class="features-item">
-                    <img src="svg/icon/deadline-img.svg" alt="Точно в срок" class="features-image"/>
-                    <h3 class="features-title">Точно в срок</h3>
-                    <p class="feature-text">
-                        Завершение проекта без опоздания, точно в указанный Вами срок.
-                    </p>
-                </div>
-                <div class="features-item">
-                    <img src="svg/icon/agreement-img.svg" alt="Ценник под вас" class="features-image"/>
-                    <h3 class="features-title">Объективная цена</h3>
-                    <p class="feature-text">
-                        Сделаю рассчет цены за работу и
-                        объясню, как складывается цена.
-                    </p>
-                </div>
-                <div class="features-item">
-                    <img src="svg/icon/steps-img.svg" alt="Премежуточные итоги" class="features-image"/>
-                    <h3 class="features-title">Промежуточные итоги</h3>
-                    <p class="feature-text">
-                        Рассмотрение поэтапного выполнения работ с учётом Ваших пожеланий.
-                    </p>
-                </div>
-                <div class="features-item">
-                    <img src="svg/icon/storage-img.svg" alt="Хостинг и домен " class="features-image"/>
-                    <h3 class="features-title">Хостинг и домен</h3>
-                    <p class="feature-text">
-                        В стоимость цены проекта входит также: домен и хостинг на год.
-                    </p>
-                </div>
-                <div class="features-item">
-                    <img src="svg/icon/conversation-img.svg" alt="Не брошу после сдачи" class="features-image"/>
-                    <h3 class="features-title">Поддержка проекта</h3>
-                    <p class="feature-text">
-                        Научу Вас пользоваться сайтом, запишу
-                        видео-инструкции.
-                    </p>
-                </div>
+            <p class="animate-this">
+                Я всегда любил играть в игры. И мне было интересно, как с точки зрения разработки устроена компьютерная
+                игра, как создаётся игровой мир. Поэтому я захотел изучить игровые движки, такие как Unity и Unreal
+                Engine и в будущем стать разработчиком игр.
+            </p>
+
+            <p class="animate-this">
+                Для реализации свое мечты у меня был выбор куда поступать. Либо поступить в Архитектурный институт,
+                чтобы изучить такие программы, как AutoCAD и 3ds Max, либо поступить в МГУ и изучить программирование. В
+                конечном итоге я выбрал МГУ и открыл для себя программирование и веб разработку.
+            </p>
+
+            <p class="animate-this">
+                С тех пор я изучал всё новые и новые технологии, проходил различные курсы для повышения квалификации,
+                участвовал в нескольких проектах во время стажировки. Сегодня я работаю веб разработчиком в
+                замечательной команде Altek LLC. и занимаюсь геймдевом в свободное время.
+            </p>
+
+            <p class="animate-this">
+                Знаком также и с другими языками программирования, такие как Python, С++, PHP.
+            </p>
+
+            <p class="animate-this">
+                <a href="images/documents/Соин Роман - Резюме.docx"
+                   class="button button-primary full-width animate-this" download>Скачать резюме</a>
+            </p>
+
+        </div> <!-- end about-profile  -->
+
+        <div class="about-services">
+
+            <div class="intro">
+                <h1 class="animate-this">Что я могу.</h1>
+
+                <p class="lead animate-this">
+                    Занимаюсь веб разработкой с 2020 года. Разрабатываю одностроничные сайты, интернет
+                    магазины и веб-приложения. Делаю дизайн-макеты для сайтов.
+                </p>
             </div>
-        </div>
-        <!-- /.container -->
-    </section>
 
-
-    <section class="section myprojects " id="projects">
-        <div class="container wow zoomIn" data-wow-delay="0.8s">
-            <h2 class="myproject-title">Мои проекты</h2>
-            <h4 class="myproject-subtitle">На основе известных брендов</h4>
-            <div class="swiper-container projects-slider">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide projects-slide">
-                        <a target="_blank" href="https://soinroma.github.io/FabricaOfCoffee/">
-                            <img src="img//sites/FabricOfCoffee.png" alt="Coffee" class="project-image pulse "/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">Фабрика Кофе</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">15 рабочих дней</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">3 000 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
+            <ul class="services">
+                <li class="animate-this">
+                    <div class="icon-wrap">
+                        <i class="icon-Checked"></i>
                     </div>
-
-                    <div class="swiper-slide projects-slide">
-                        <a target="_blank" href="https://soinroma.github.io/SpaceX/">
-                            <img src="img/sites/SpaceX.png" alt="SpaceX" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">SpaceX - исследуй космос</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">4 рабочих дня</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">2 000 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
+                    <div class="service-item">
+                        <h4>Дизайн-макет</h4>
+                        <p>
+                            Создам дизайн-макет для вашего продукта с учётом Ваших пожеланий в программе PhotoShop или
+                            Figma.
+                        </p>
                     </div>
-
-                    <div class="swiper-slide projects-slide">
-                        <a target="_blank" href="https://soinroma.github.io/PS5/">
-                            <img src="img/sites/PS5.png" alt="PS5" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">PS5 - время играть</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">4 рабочих дня</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">2 000 000 сум</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- /.project-text -->
+                </li>
+                <li class="animate-this">
+                    <div class="icon-wrap">
+                        <i class="icon-HTML"></i>
                     </div>
-
-                    <div class="swiper-slide projects-slide">
-                        <a target="_blank" href="https://soinroma.github.io/IKEA/">
-                            <img src="img/sites/IKEA.png" alt="IKEA" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">IKEA - магазин с каталогом</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">6 рабочих дней</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">2 500 000 сум</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- /.project-text -->
+                    <div class="service-item">
+                        <h4>Вёрстка сайта</h4>
+                        <p>
+                            После утверждения дизайн-макета приступлю к созданию каркаса Вашего сайта. В зависимости от
+                            сложности проекта подберу соответсвующий фреймворк.
+                        </p>
                     </div>
-
-                    <div class="swiper-slide projects-slide">
-                        <a target="_blank" href="https://soinroma.github.io/DeliveryFood/">
-                            <img src="img/sites/DeliveryFood.png" alt="DeliveryFood" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">Delivery Food - выбери свою еду! </h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">8 рабочих дней</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">3 000 000 сум</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <!-- /.project-text -->
+                </li>
+                <li class="animate-this">
+                    <div class="icon-wrap">
+                        <i class="icon-CSSFiletype"></i>
                     </div>
-
-                    <div class="swiper-slide projects-slide">
-                        <a target="_blank" href="https://soinroma.github.io/UrbanShop/">
-                            <img src="img/sites/UrbanShop.png" alt="UrbanShop" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">UrbanShop - покупай! </h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">6 рабочих дней</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">2 500 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
+                    <div class="service-item">
+                        <h4>Стилизация</h4>
+                        <p>
+                            В процессе создания Вашего проекта добавлю стилизацию, анимацию.
+                        </p>
                     </div>
-
-                    <div class="swiper-slide projects-slide">
-                        <a target="_blank" href="https://soinroma.github.io/Building.uz/">
-                            <img src="img/sites/Building.png" alt="Building" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">Купи квартиру в Tashkent City</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">6 рабочих дней</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">2 500 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
+                </li>
+                <li class="animate-this">
+                    <div class="icon-wrap">
+                        <i class="icon-ResizeDiagonal"></i>
                     </div>
-
-                    <div class="swiper-slide projects-slide">
-                        <a target="_blank" href="https://soinroma.github.io/ConstructorForLandingPage/">
-                            <img src="img/sites/Constructor.png" alt="Constructor" class="project-image pulse"/>
-                        </a>
-                        <div class="project-text">
-                            <h3 class="project-title">Конструктор сайтов</h3>
-                            <div class="project-time">
-                                <img src="svg/icon/time-icon.svg" alt="Сроки" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Сроки</h4>
-                                    <p class="project-paragraph">7 рабочих дней</p>
-                                </div>
-                            </div>
-                            <div class="project-cost">
-                                <img src="svg/icon/cost-icon.svg" alt="Цена" class="project-icon"/>
-                                <div class="project-description">
-                                    <h4 class="project-subtitle">Стоимость</h4>
-                                    <p class="project-paragraph">3 000 000 сум</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.project-text -->
+                    <div class="service-item">
+                        <h4>Адаптив</h4>
+                        <p>
+                            Сделаю для Вашего продукта адаптив под различные планшеты и телефоны.
+                        </p>
                     </div>
+                </li>
+                <li class="animate-this">
+                    <div class="icon-wrap">
+                        <i class="icon-Services"></i>
+                    </div>
+                    <div class="service-item">
+                        <h4>Интерактив</h4>
+                        <p>
+                            Добавлю для Вашего продукта интерактив, логику и динамику с помощью языка JavaScript.
+                        </p>
+                    </div>
+                </li>
+                <li class="animate-this">
+                    <div class="icon-wrap">
+                        <i class="icon-Business"></i>
+                    </div>
+                    <div class="service-item">
+                        <h4>Сопровождение</h4>
+                        <p>
+                            После завершения проекта буду сопровождать Ваш продукт и дальше.
+                        </p>
+                    </div>
+                </li>
+            </ul>
 
+        </div> <!-- end about-services  -->
 
-                </div>
-                <!-- If we need pagination -->
-                <div class="projects-pagination"></div>
+    </div> <!-- end about-wrap  -->
+
+</section> <!-- end about -->
+
+<!-- skills
+================================================== -->
+<section id="skills">
+
+    <div class="overlay"></div>
+    <div class="gradient-overlay"></div>
+
+    <div class="row wide">
+        <div class="col-skills">
+
+            <div class="section-intro">
+
+                <h1 class="animate-this">Навыки и технологии.</h1>
+
+                <p class="animate-this">
+                    Помимо основных своих навыков в области веб-разработки я также отлично владею следующими
+                    программами, такие как PhotoShop, Figma, VegasPro.
+                </p>
             </div>
-        </div>
-    </section>
 
-    <footer class="section features footer" id="contacts">
-        <div class="container wow zoomIn" data-wow-delay="0.4s">
-            <img src="img/banner.png" alt="SR" style="width: 1px;" />
-            <h2 class="section-title footer-title">Свяжитесь со мной</h2>
-            <div class="contacts-block">
-                <div class="contacts-text">
-                    <div class="contacts-data">
-                        <div class="contacts-social">
-                            <h4 class="contacts-title">Соцсети</h4>
-                            <div class="social-links footer-link">
-                                <a target="_blank" href="https://github.com/SoinRoma" class="social-link"><img
-                                        src="svg/social/github.svg" alt="Github"/></a>
-                                <a target="_blank" href="https://t.me/Soin_Roman" class="social-link"><img
-                                        src="svg/social/telegram.svg" alt="Telegram"/></a>
-                                <a target="_blank" href="https://vk.com/soin_roman" class="social-link"><img
-                                        src="svg/social/vk.svg"
-                                        alt="Telegram"/></a>
-                                <a target="_blank" href="https://www.instagram.com/soin_roman/" class="social-link"><img
-                                        src="svg/social/instagram.svg" alt="Instagram"/></a>
-                                <a target="_blank" href="https://www.facebook.com/soinroman/" class="social-link"><img
-                                        src="svg/social/facebook.svg" alt="Facebook"/></a>
-                                <a target="_blank" href="https://www.linkedin.com/in/soinroman/"
-                                   class="social-link"><img
-                                        src="svg/social/linkedin.svg" alt="Linkedin"/></a>
-                            </div>
-                        </div>
-                        <div class="contacts-phone">
-                            <h4 class="contacts-title">Телефон</h4>
-                            <a href="tel:+998909431832" class="contacts-link">+998 90 943-18-32</a>
-                        </div>
-                        <div class="contacts-mail">
-                            <h4 class="contacts-title">Почта</h4>
-                            <a href="mailto:soinroma26@gmail.com" class="contacts-link">soinroma26@gmail.com</a>
-                        </div>
+            <ul class="skill-bars">
+                <li class="animate-this" data-animate="fadeInRight">
+                    <div class="progress percent95"><span>95%</span></div>
+                    <strong>HTML5</strong>
+                </li>
+                <li class="animate-this" data-animate="fadeInRight">
+                    <div class="progress percent90"><span>90%</span></div>
+                    <strong>CSS3</strong>
+                </li>
+                <li class="animate-this" data-animate="fadeInRight">
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>JavaScript</strong>
+                </li>
+                <li class="animate-this" data-animate="fadeInRight">
+                    <div class="progress percent70"><span>70%</span></div>
+                    <strong>JQuery</strong>
+                </li>
+                <li class="animate-this" data-animate="fadeInRight">
+                    <div class="progress percent50"><span>50%</span></div>
+                    <strong>Angular</strong>
+                </li>
+                <li class="animate-this" data-animate="fadeInRight">
+                    <div class="progress percent40"><span>40%</span></div>
+                    <strong>React</strong>
+                </li>
+            </ul>
+
+        </div> <!-- end col-six -->
+    </div> <!-- end row wide -->
+
+</section> <!-- end skills -->
+
+<!-- credentials
+================================================== -->
+<section id="credentials">
+
+    <div class="row narrow section-intro with-bottom-sep">
+        <div class="col-twelve">
+            <h1 class="animate-this">Больше моих данных.</h1>
+        </div>
+    </div> <!-- end section-intro -->
+
+    <div class="row wide credentials-content">
+
+        <div class="col-six tab-full left">
+
+            <h2 class="animate-this">Опыт работы</h2>
+
+            <div class="timeline-wrap">
+
+                <div class="timeline-block animate-this">
+                    <div class="timeline-ico">
+                        <i class="fa fa-briefcase"></i>
                     </div>
-                </div>
-            </div>
+                    <div class="timeline-header">
+                        <p class="timeframe">Сентябрь 2021 - Настоящее время</p>
+                        <h3>Altek LLC</h3>
+                        <h4>Веб разработчик</h4>
+                    </div>
+                    <div class="timeline-content">
+                        <p>
+                            Работа в частном проекте "Logistic System", "MS MOTORS"- сайты для выбора транспортировки
+                            вашего груза,
+                            отслеживания всех данных по перевозкам, а также данных пользователей и
+                            диспетчеров. Работа в частнов проекте "LEXIVO" - сайт для общения и принятия звонков.
+                        </p>
+                    </div>
+                </div> <!-- end timeline-block -->
+
+                <div class="timeline-block animate-this">
+                    <div class="timeline-ico">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <p class="timeframe">Август 2020 - Апрель 2021</p>
+                        <h3>Министерство инвестиций</h3>
+                        <h4>Веб разработчик</h4>
+                    </div>
+                    <div class="timeline-desc">
+                        <p>
+                            Работа в государственном проекте "Фабрика проектов" - помощь молодым предпринимателям,
+                            которые могут оставить заявку на свой стартап, ERP.MIFT.UZ - проверка заявок от
+                            пользователей и всех заключенных контрактов фирм по их ИНН.
+                        </p>
+                    </div>
+                </div> <!-- end timeline-block -->
+
+                <div class="timeline-block animate-this">
+                    <div class="timeline-ico">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <p class="timeframe">Февраль 2020 - Май 2020</p>
+                        <h3>UzOnline</h3>
+                        <h4>PHP разработчик</h4>
+                    </div>
+                    <div class="timeline-content">
+                        <p>
+                            Работа в частном проекте "Medical Booking" – онлайн бронирование пациентов в больницу или
+                            частную клинику.
+                        </p>
+                    </div>
+                </div> <!-- end timeline-block -->
+
+            </div> <!-- end timeline-wrap -->
+
+        </div> <!-- end col-six -->
+
+        <div class="col-six tab-full right">
+
+            <h2 class="animate-this">Образование</h2>
+
+            <div class="timeline-wrap">
+
+                <div class="timeline-block animate-this">
+                    <div class="timeline-ico">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <p class="timeframe">Сентябрь 2017 - Июнь 2021</p>
+                        <h3>Филиал МГУ в горроде Ташкент</h3>
+                        <h4>Бакалавр</h4>
+                    </div>
+                    <div class="timeline-content">
+                        <p>
+                            Учился по направлению "Прикладная математика и информатика". За четыре года прошёл такие
+                            курсы,
+                            как Математический анализ, Дискретная математиа, Нейронные сети, Основы Assembler, Python,
+                            C++ и другие курсы.
+                        </p>
+                    </div>
+                </div> <!-- end timeline-block -->
+
+                <div class="timeline-block animate-this">
+                    <div class="timeline-ico">
+                        <i class="fa fa-graduation-cap"></i>
+                    </div>
+                    <div class="timeline-header">
+                        <p class="timeframe">Сентябрь 2014 - Июнь 2017</p>
+                        <h3>Архитектурный лицец</h3>
+                        <h4></h4>
+                    </div>
+                    <div class="timeline-desc">
+                        <p>
+                            Учился по основному направлению. Изучал архитектуру, живопись, рисунок. Работал в таких
+                            программах, как AutoCad, 3dsMax.
+                        </p>
+                    </div>
+                </div> <!-- end timeline-block -->
+
+            </div> <!-- end timeline-wrap -->
+
+        </div> <!-- end col-six -->
+
+    </div> <!-- end row wide -->
+
+</section> <!-- end credentials -->
+
+<!-- layouts
+================================================== -->
+<section id="portfolio">
+
+    <div class="row narrow section-intro with-bottom-sep">
+        <div class="col-twelve">
+            <h3 class="animate-this">Портфолио</h3>
+            <h1 class="animate-this">Дизайн макеты.</h1>
+            <p class="lead animate-this">
+                Разрабатываю уникальный дизайн сайтов (лендинги, многостраничные сайты), который решает задачи малого и
+                среднего бизнеса с понятной пользователю структурой, учитывая современные тренды и стили в дизайне.
+            </p>
         </div>
-    </footer>
+    </div> <!-- end row section-intro -->
 
-</main>
+    <div class="row portfolio-content">
+        <div class="col-twelve">
+            <div id="folio-wrap" class="bricks-wrapper">
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this" data-src="images/layouts/full/ArendaFull.jpg"
+                         data-sub-html="#01">
+                        <a href="#" class="overlay">
+                            <img src="images/layouts/Arenda.png" alt="Arenda">
+                            <div class="item-text">
+									<span class="folio-types">
+										UI/UX Design
+									</span>
+                                <h3 class="folio-title">Сайт для аренды офисов</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this" data-src="images/layouts/full/MobileFull.jpg"
+                         data-sub-html="#02">
+                        <a href="#" class="overlay">
+                            <img src="images/layouts/Mobile.png" alt="Mobile">
+                            <div class="item-text">
+									<span class="folio-types">
+										UI/UX Design
+									</span>
+                                <h3 class="folio-title">Сайт для мобильного приложения</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this" data-src="images/layouts/full/GamesConsoleFull.png"
+                         data-sub-html="#03">
+                        <a href="#" class="overlay">
+                            <img src="images/layouts/GamesConsole.png" alt="GamesConsole">
+                            <div class="item-text">
+									<span class="folio-types">
+										UI/UX Design
+									</span>
+                                <h3 class="folio-title">Сайт для игровых консолей</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this" data-src="images/layouts/full/ZooFull.jpg"
+                         data-sub-html="#04">
+                        <a href="#" class="overlay">
+                            <img src="images/layouts/Zoo.png" alt="Zoo">
+                            <div class="item-text">
+									<span class="folio-types">
+										UI/UX Design
+									</span>
+                                <h3 class="folio-title">Сайт для Зоо-магвзина</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+            </div> <!-- end folio-wrap -->
+        </div> <!-- end twelve -->
+    </div> <!-- end portfolio-content -->
+
+</section> <!-- end portfolio -->
+
+<!-- portfolio
+================================================== -->
+<section id="portfolio1">
+
+    <div class="row narrow section-intro with-bottom-sep">
+        <div class="col-twelve">
+            <h1 class="animate-this">Рабочие проекты.</h1>
+            <p class="lead animate-this">
+                Работаю над уникальными проектами в сфере логистики, телефонии, а также в городских проектах.
+            </p>
+        </div>
+    </div> <!-- end row section-intro -->
+
+    <div class="row portfolio-content">
+        <div class="col-twelve">
+            <div id="folio-wrap-1" class="bricks-wrapper">
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/Building.uz/" class="overlay pointer">
+                            <img src="images/sites/Building.png" alt="Building">
+                            <div class="item-text">
+									<span class="folio-types">
+										Landing Page
+									</span>
+                                <h3 class="folio-title">Сайт для покупки кварптиры</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/Building.uz/" class="overlay pointer">
+                            <img src="images/sites/Building.png" alt="Building">
+                            <div class="item-text">
+									<span class="folio-types">
+										Landing Page
+									</span>
+                                <h3 class="folio-title">Сайт для покупки кварптиры</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/Building.uz/" class="overlay pointer">
+                            <img src="images/sites/Building.png" alt="Building">
+                            <div class="item-text">
+									<span class="folio-types">
+										Landing Page
+									</span>
+                                <h3 class="folio-title">Сайт для покупки кварптиры</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/Building.uz/" class="overlay pointer">
+                            <img src="images/sites/Building.png" alt="Building">
+                            <div class="item-text">
+									<span class="folio-types">
+										Landing Page
+									</span>
+                                <h3 class="folio-title">Сайт для покупки кварптиры</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+            </div> <!-- end folio-wrap -->
+        </div> <!-- end twelve -->
+    </div> <!-- end portfolio-content -->
+
+</section> <!-- end portfolio -->
+
+<section id="portfolio2">
+
+    <div class="row narrow section-intro with-bottom-sep">
+        <div class="col-twelve">
+            <h1 class="animate-this">Мои проекты.</h1>
+            <p class="lead animate-this">
+                В свободное время разрабатываю свои проекты.
+            </p>
+        </div>
+    </div> <!-- end row section-intro -->
+
+    <div class="row portfolio-content">
+        <div class="col-twelve">
+            <div id="folio-wrap-2" class="bricks-wrapper">
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/CountdownRelationship/" class="overlay pointer">
+                            <img src="images/sites/Countdown.png" alt="Countdown">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Счётчик моих отношений!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/Car-Showroom/" class="overlay pointer">
+                            <img src="images/sites/CarShowroom.png" alt="CarShowroom">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Промосайт для автосалона!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/SteamShop/index.html" class="overlay pointer">
+                            <img src="images/sites/SteamShop.png" alt="SteamShop">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">SteamShop - покупай и играй!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/Flowers/" class="overlay pointer">
+                            <img src="images/sites/Flowers.png" alt="Flowers">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Flowers.uz - интернет магазин цветов</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/Greenwich-apartments/" class="overlay pointer">
+                            <img src="images/sites/Greenwich.png" alt="Greenwich">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">GA - выбери себе квартиру!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/ConstructorForLandingPage/" class="overlay pointer">
+                            <img src="images/sites/Constructor.png" alt="Constructor">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Конструктор для одностраничных сайтов</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/DeliveryFood/" class="overlay pointer">
+                            <img src="images/sites/DeliveryFood.png" alt="DeliveryFood">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Сайт для доставки еды!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/UrbanShop/" class="overlay pointer">
+                            <img src="images/sites/UrbanShop.png" alt="UrbanShop">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Купи себе лучшую одежду!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/IKEA/" class="overlay pointer">
+                            <img src="images/sites/IKEA.png" alt="IKEA">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Сайт для магазина IKEA!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/CarGame/" class="overlay pointer">
+                            <img src="images/sites/CarGame.png" alt="CarGame">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Браузенрная гоночная игра.</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/PS5/" class="overlay pointer">
+                            <img src="images/sites/PS5.png" alt="PS5">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Промосайт для PS5</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://github.com/SoinRoma/Blog" class="overlay pointer">
+                            <img src="images/sites/Blog.png" alt="Blog">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS PHP LARAVEL
+									</span>
+                                <h3 class="folio-title">Блог для постов!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/SpaceX/" class="overlay pointer">
+                            <img src="images/sites/SpaceX.png" alt="SpaceX">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Промосайт для SpaceX</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/FabricaOfCoffee/" class="overlay pointer">
+                            <img src="images/sites/FabricOfCoffee.png" alt="FabricOfCoffee">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS PHP
+									</span>
+                                <h3 class="folio-title">Закажи лучший кофе!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+                <div class="brick folio-item">
+                    <div class="item-wrap animate-this">
+                        <a target="_blank" href="https://soinroma.github.io/Building.uz/" class="overlay pointer">
+                            <img src="images/sites/Building.png" alt="Building">
+                            <div class="item-text">
+									<span class="folio-types">
+										HTML CSS JS
+									</span>
+                                <h3 class="folio-title">Купи квартиру в Tashkent City!</h3>
+                            </div>
+                        </a>
+                    </div> <!-- end item-wrap -->
+                </div> <!-- end folio-item -->
+
+            </div> <!-- end folio-wrap -->
+        </div> <!-- end twelve -->
+    </div> <!-- end portfolio-content -->
+
+</section> <!-- end portfolio -->
+
+<!-- contact
+================================================== -->
+<footer id="contact">
+
+    <div class="overlay"></div>
+
+    <div class="row narrow section-intro">
+        <div class="col-twelve">
+            <h3 class="animate-this">Контакты</h3>
+            <img src="images/banner.png" alt="SR" style="width: 1px;"/>
+            <h1 class="animate-this">Рассмотрю все ваши предложения.</h1>
+
+            <p class="lead animate-this">
+                Разрабатываю сайты для малого и среднего бизнеса. Вы можете заказать дизайн и верстку небольшого сайта
+                или интернет-магазина.
+            </p>
+        </div>
+    </div> <!-- end section-intro -->
+
+    <div class="row contact-info">
 
 
-<script src="js/wow.min.js"></script>
-<script src="js/swiper-bundle.min.js"></script>
-<script src="js/fancybox.js"></script>
+        <div class="col-four tab-full collapse">
+            <h5 class="animate-this">Напишите мне</h5>
+
+            <p class="animate-this">
+                <a class="footer-links" href="mailto:soinroma26@gmail.com">soinroma26@gmail.com</a>
+            </p>
+        </div> <!-- end col-four -->
+
+        <div class="col-four tab-full">
+            <h5 class="animate-this">Позвоните мне</h5>
+
+            <p class="animate-this">
+                <a class="footer-links" href="tel:+998909431832">+998 (90) 943-18-32</a>
+            </p>
+        </div> <!-- end col-four -->
+
+        <div class="col-four tab-full">
+            <h5 class="animate-this">Социальные сети</h5>
+
+            <p class="animate-this">
+
+                <a class="footer-links footer-icon" target="_blank" href="https://www.facebook.com/soinroman/"><i
+                        class="fa fa-facebook-square"></i></a>
+
+                <a class="footer-links footer-icon" target="_blank" href="https://www.linkedin.com/in/soinroman/"><i
+                        class="fa fa-linkedin"></i></a>
+
+                <a class="footer-links footer-icon" target="_blank" href="https://vk.com/soin_roman"><i
+                        class="fa fa-vk"></i></a>
+
+                <a class="footer-links footer-icon" target="_blank" href="https://t.me/Soin_Roman">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" fill="currentColor"
+                         class="bi bi-telegram" viewBox="0 0 16 16">
+                        <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"/>
+                    </svg>
+                </a>
+
+                <a class="footer-links" target="_blank" href="https://www.instagram.com/soin_roman/"><i
+                        class="fa fa-instagram"></i></a>
+
+
+            </p>
+        </div> <!-- end col-four -->
+
+    </div> <!-- end row contact-info -->
+
+    <div id="go-top">
+        <a class="smoothscroll" title="Back to Top" href="#top"><i class="icon-UpArrow"></i></a>
+    </div>
+
+</footer> <!-- end contact -->
+
+
+<div id="preloader">
+    <div id="loader"></div>
+</div>
+
+<!-- Java Script
+================================================== -->
+<script src="js/base/jquery.min.js"></script>
+<script src="js/base/plugins.js"></script>
+
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/isotope.pkgd.min.js"></script>
+<script src="js/simple-skillbar.js"></script>
+
 <script src="js/main.js"></script>
 
 </body>
