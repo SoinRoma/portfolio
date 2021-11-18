@@ -2551,7 +2551,7 @@ header .header-logo {
     margin: 0;
 }
 
-#portfolio1 .bricks-wrapper .brick{
+#portfolio1 .bricks-wrapper .brick {
     clear: both;
     padding: 10px;
 }
@@ -2783,6 +2783,24 @@ header .header-logo {
     #portfolio .bricks-wrapper .brick {
         float: none;
         width: 100%;
+    }
+
+    #portfolio1 .bricks-wrapper .brick {
+        float: none;
+        width: 100%;
+    }
+
+    #portfolio2 .bricks-wrapper .brick {
+        float: none;
+        width: 100%;
+    }
+
+    #home {
+        background-position: 75%;
+    }
+
+    .about-profile-bg {
+        background-position: 70%;
     }
 
 }
@@ -3279,8 +3297,8 @@ footer .footer-social li:last-child {
  * ------------------------------------------------------------------- */
 @media only screen and (max-width: 768px) {
     #go-top {
-        bottom: 0;
-        right: 0;
+        bottom: 20px;
+        right: 26px;
     }
 
 }
@@ -3390,3 +3408,23 @@ Portfolio
     text-align: center;
 }
 
+.hideMySites {
+    display: none;
+}
+
+.showMysites {
+    margin: auto;
+    display: flex;
+    font-size: 13px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 0px;
+    line-height: 3.4rem;
+    height: 3.4rem;
+    background: transparent;
+    margin-top: 10px;
+}
+
+.showMysites:hover {
+    background: transparent;
+}
