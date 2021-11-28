@@ -2824,6 +2824,11 @@ header .header-logo {
         width: 100%;
     }
 
+    #portfolio3 .bricks-wrapper .brick {
+        float: none;
+        width: 100%;
+    }
+
     #home {
         background-position: 75%;
     }
