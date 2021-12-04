@@ -1,13 +1,8 @@
-/* ===================================================================
- * Howdy - Main JS
- *
- * ------------------------------------------------------------------- */
-
 (function ($) {
 
     "use strict";
 
-    var cfg = {
+    let cfg = {
             defAnimation: "fadeInUp",    // default css animation
             scrollDuration: 800,           // smoothscroll duration
             statsDuration: 4000           // stats animation duration
