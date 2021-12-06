@@ -1450,8 +1450,15 @@ header .header-logo {
 }
 
 .home-content-tablecell h1 {
+     font-family: "Roboto", sans-serif;
+     font-size: 5.2rem;
+     line-height: 1.5;
+     color: #FFFFFF;
+ }
+
+.home-content-tablecell h3 {
     font-family: "Roboto", sans-serif;
-    font-size: 5.2rem;
+    font-size: 3.0rem;
     line-height: 1.5;
     color: #FFFFFF;
 }
