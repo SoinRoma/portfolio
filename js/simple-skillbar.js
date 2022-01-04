@@ -1,19 +1,8 @@
-/*!jQuery Simple SkillBar*/
-
-/**
- *  Version: 1.0.0 (06/11/2016)
- *  Copyright (c) 2016 Leonhard Sinaga
- *  Under MIT and GPL licenses:
- *  http://www.opensource.org/licenses/mit-license.php
- *  http://www.gnu.org/licenses/gpl.html
- *  Source: https://github.com/leonhards/jquery-simple-skillbar
- */
-
 (function ( $ ) {
 
     "use strict";
 
-    var sb = {};
+    let sb = {};
 
     sb.o = function() {
         this.o = null;
@@ -31,7 +20,7 @@
 
             this.class(this.$);
             this.intv(this.$);
-          
+
             return this;
         };
     };
@@ -62,12 +51,12 @@
         };
 
         this.intv = function(i) {
-            var s = this;
-            var e = i.find('.sb_bar');
-            var w = 1;
-            var t = setInterval( function() { itv(); }, 10 );            
+            let s = this;
+            let e = i.find('.sb_bar');
+            let w = 1;
+            let t = setInterval( function() { itv(); }, 10 );
 
-            var itv = function() {
+            let itv = function() {
                 if ( w >= s.o.width ) {
                     clearInterval(t);
                 } else {
@@ -81,11 +70,11 @@
     $.fn.simpleSkillbar = function(o) {
 
         return this.each(function() {
-            var d = new sb.cb();
+            let d = new sb.cb();
             d.o = o;
             d.$ = $(this);
             d.run();
         });
     };
- 
+
 }( jQuery ));
