@@ -9,7 +9,7 @@ html {
 
 @media only screen and (max-width: 1024px) {
     html {
-        font-size: 9.375px;
+        font-size: 10px;
     }
 }
 
@@ -21,7 +21,7 @@ html {
 
 @media only screen and (max-width: 400px) {
     html {
-        font-size: 9.375px;
+        font-size: 10px;
     }
 }
 
@@ -1303,7 +1303,6 @@ header .header-logo {
     position: absolute;
     top: 36px;
     right: 30px;
-    font: 0/0 a;
     text-shadow: none;
     color: transparent;
 }
@@ -1371,14 +1370,10 @@ header .header-logo {
  *
  * ------------------------------------------------------------------- */
 #home {
-    background: #151515;
     width: 100%;
     height: 100%;
-    background-image: url(../images/backgrouds/intro-bg.png);
-    background-repeat: no-repeat;
-    background-position: center 35%;
     /* background-position: center; */
-    background-attachment: fixed;
+    background: #151515 url(../images/backgrouds/intro-bg.png) no-repeat fixed center 35%;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -1699,11 +1694,8 @@ header .header-logo {
     top: 0;
     left: 0;
     height: 100%;
-    background: #EBEBEB;
     width: 50%;
-    background-image: url(../images/backgrouds/profile-bg.png);
-    background-repeat: no-repeat;
-    background-position: center;
+    background: #EBEBEB url(../images/backgrouds/profile-bg.png) no-repeat center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -3063,7 +3055,6 @@ Portfolio
 }
 
 .showMysites {
-    margin: auto;
     display: flex;
     font-size: 13px;
     padding-left: 10px;
@@ -3072,7 +3063,7 @@ Portfolio
     line-height: 3.4rem;
     height: 3.4rem;
     background: transparent;
-    margin-top: 10px;
+    margin: 10px auto auto;
 }
 
 .showMysites:hover {

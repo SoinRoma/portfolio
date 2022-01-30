@@ -75,8 +75,7 @@
         let menuTrigger = $('#header-menu-trigger'),
             nav = $('#menu-nav-wrap'),
             closeButton = nav.find('.close-button'),
-            siteBody = $('body'),
-            mainContents = $('section, footer');
+            siteBody = $('body');
 
         // open-close menu by clicking on the menu icon
         menuTrigger.on('click', function (e) {
@@ -205,7 +204,6 @@
         let pxShow = 500,         // height on which the button will show
             fadeInTime = 400,         // how slow/fast you want the button to show
             fadeOutTime = 400,         // how slow/fast you want the button to hide
-            scrollSpeed = 300,         // how slow/fast you want the button to scroll to top. can be a value, 'slow', 'normal' or 'fast'
             goTopButton = $("#go-top");
 
         // Show or hide the sticky footer button
