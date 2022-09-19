@@ -3,35 +3,25 @@
     "use strict";
 
     let cfg = {
-            defAnimation: "fadeInUp",    // default css animation
-            scrollDuration: 800,           // smoothscroll duration
-            statsDuration: 4000           // stats animation duration
+            defAnimation: "fadeInUp",
+            scrollDuration: 800,
+            statsDuration: 4000
         },
         $WIN = $(window);
 
 
-    /* Preloader
-     * -------------------------------------------------- */
     let ssPreloader = function () {
 
         $WIN.on('load', function () {
 
-            // force page scroll position to top at page refresh
             $('html, body').animate({scrollTop: 0}, 'normal');
 
-            // will first fade out the loading animation
             $("#loader").fadeOut("slow", function () {
-
-                // will fade out the whole DIV that covers the website.
                 $("#preloader").delay(300).fadeOut("slow");
-
             });
         });
     };
 
-
-    /*	Masonry
-    ------------------------------------------------------ */
     let ssMasonryFolio = function () {
 
         let containerBricks = $('.bricks-wrapper');
@@ -44,9 +34,6 @@
         });
     };
 
-
-    /*	Light Gallery
-    ------------------------------------------------------- */
     let ssLightGallery = function () {
 
         $('#folio-wrap').lightGallery({
@@ -58,18 +45,12 @@
 
     };
 
-
-    /* Menu on Scrolldown
-   * ------------------------------------------------------ */
     let ssMenuOnScrolldown = function () {
 
         let menuTrigger = $('#header-menu-trigger');
         menuTrigger.addClass('opaque');
     };
 
-
-    /* OffCanvas Menu
-   * ------------------------------------------------------ */
     let ssOffCanvas = function () {
 
         let menuTrigger = $('#header-menu-trigger'),
@@ -100,9 +81,6 @@
 
     };
 
-
-    /* Smooth Scrolling
-      * ------------------------------------------------------ */
     let ssSmoothScroll = function () {
 
         $('.smoothscroll').on('click', function (e) {
@@ -127,10 +105,6 @@
 
     };
 
-
-
-    /* Animations
-      * ------------------------------------------------------- */
     let ssAnimations = function () {
 
         if (!$("html").hasClass('no-cssanimations')) {
@@ -169,9 +143,6 @@
 
     };
 
-
-    /* Intro Animation
-      * ------------------------------------------------------- */
     let ssIntroAnimation = function () {
 
         $WIN.on('load', function () {
@@ -196,9 +167,6 @@
 
     };
 
-
-    /* Back to Top
-      * ------------------------------------------------------ */
     let ssBackToTop = function () {
 
         let pxShow = 500,         // height on which the button will show
@@ -216,9 +184,6 @@
         });
     };
 
-
-    /* Initialize
-      * ------------------------------------------------------ */
     (function ssInit() {
         ssPreloader();
         ssMasonryFolio();
