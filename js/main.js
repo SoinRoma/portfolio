@@ -34,17 +34,6 @@
         });
     };
 
-    let ssLightGallery = function () {
-
-        $('#folio-wrap').lightGallery({
-            showThumbByDefault: false,
-            hash: false,
-            selector: ".item-wrap"
-        });
-
-
-    };
-
     let ssMenuOnScrolldown = function () {
 
         let menuTrigger = $('#header-menu-trigger');
@@ -187,7 +176,6 @@
     (function ssInit() {
         ssPreloader();
         ssMasonryFolio();
-        ssLightGallery();
         ssMenuOnScrolldown();
         ssOffCanvas();
         ssSmoothScroll();
