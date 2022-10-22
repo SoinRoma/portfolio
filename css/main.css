@@ -1139,13 +1139,7 @@ header .header-logo {
     transition: all 0.3s ease-in-out;
 }
 
-#header-menu-trigger.opaque {
-    background-color: #000000;
-}
 
-#header-menu-trigger.opaque .header-menu-text {
-    background-color: #000000;
-}
 
 #header-menu-trigger:hover,
 #header-menu-trigger:focus {
@@ -1170,7 +1164,7 @@ header .header-logo {
     display: block;
     height: 2px;
     width: 24px;
-    background-color: #FFFFFF;
+    background-color: #888;
     position: absolute;
     top: 50%;
     right: 9px;
@@ -1299,7 +1293,6 @@ header .header-logo {
     height: 30px;
     width: 30px;
     border-radius: 3px;
-    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 36px;
     right: 30px;
@@ -2516,6 +2509,13 @@ header .header-logo {
         background-position: 70%;
     }
 
+    .bricks-wrapper .item-wrap .item-text .folio-types {
+        font-size: 0.8rem;
+    }
+
+    .bricks-wrapper .item-wrap .item-text .folio-title {
+        font-size: 1.4rem;
+    }
 }
 
 
@@ -2909,7 +2909,6 @@ footer .footer-social li:last-child {
     width: 42px;
     line-height: 63px;
     text-align: center;
-    background-color: #000000;
     color: #888;
     text-transform: uppercase;
     -moz-transition: all 0.3s ease-in-out;
@@ -2921,17 +2920,6 @@ footer .footer-social li:last-child {
 #go-top a i {
     font-size: 21px;
     line-height: inherit;
-}
-
-#go-top a:visited {
-    background: #000000;
-    color: #888;
-}
-
-#go-top a:hover,
-#go-top a:focus {
-    background: #000000;
-    color: #FFFFFF;
 }
 
 /* -------------------------------------------------------------------
