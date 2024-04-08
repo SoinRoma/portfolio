@@ -2332,6 +2332,11 @@ header .header-logo {
     z-index: 1;
 }
 
+.item-wrap img{
+    height: 279px;
+    width: 545px;
+}
+
 
 .bricks-wrapper .item-wrap .item-text {
     position: absolute;
@@ -3065,4 +3070,12 @@ Portfolio
 
 .myProjectsHead{
     margin-top: 50px;
+}
+
+
+@media (max-width: 600px) {
+    .item-wrap img{
+        height: 100%;
+        width: 100%;
+    }
 }
